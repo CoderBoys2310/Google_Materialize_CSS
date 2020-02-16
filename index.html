@@ -7,10 +7,20 @@
     <title>Navbar</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+   
     <link href="Style.css" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    
+
+    <!-- Compiled and minified JavaScript -->
+   
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -23,6 +33,35 @@
       </ul>
     </div>
   </nav>
-   
+
+  <div class="container">
+    <h2>Create A Modal</h2>
+    <button data-target="modal" class="btn modal-trigger">Modal</button>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h4>I am Modal</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+          
+              </script>
+
+
 </body>
 </html>
